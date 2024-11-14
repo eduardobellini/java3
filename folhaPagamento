@@ -1,0 +1,6 @@
+package model;
+
+public interface folhaPagamento {
+
+    public  void calcular_salario();
+}
