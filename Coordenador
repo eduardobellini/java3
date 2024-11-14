@@ -1,0 +1,30 @@
+package model;
+
+public final class Coordenador extends Pessoa {
+
+    private double matriculaProf;
+
+    @Override
+    public String toString() {
+        return "model.Coordenador{" +
+                "matriculaProf=" + matriculaProf +
+                '}';
+    }
+
+    public double getMatriculaProf() {
+        return matriculaProf;
+    }
+
+    public void setMatriculaProf(double matriculaProf) {
+        this.matriculaProf = matriculaProf;
+    }
+    @Override
+    public void quemSouEu(){
+        System.out.println("Sou coordenador");
+    }
+
+    @Override
+    public void responsabilidade() {
+        System.out.println();
+    }
+}
