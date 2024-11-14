@@ -1,0 +1,28 @@
+package model;
+
+public final class Aluno extends Pessoa {
+     private double matricula;
+
+    @Override
+    public String toString() {
+        return "model.Aluno{" +
+                "matricula=" + matricula +
+                '}';
+    }
+
+    public double getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(double matricula) {
+        this.matricula = matricula;
+    }
+    public void quemSouEu(){
+        System.out.println("Sou aluno");
+    }
+
+    @Override
+    public void responsabilidade() {
+        System.out.println("Ensinar");
+    }
+}
