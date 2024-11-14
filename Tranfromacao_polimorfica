@@ -1,0 +1,9 @@
+package model;
+
+import model.folhaPagamento;
+
+public class TransformacaoPolimorfica {
+    public void polimorfismo_interface(folhaPagamento f){
+        f.calcular_salario();
+    }
+}
