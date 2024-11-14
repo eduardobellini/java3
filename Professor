@@ -1,0 +1,80 @@
+package model;
+
+import enuns.Cargo;
+
+public final class Professor extends Pessoa {
+    public Cargo cargo;
+
+    private String esepcialidade;
+    private double salario;
+    private int horasTrabalhadas;
+    private int valorHora = 40;
+
+    @Override
+    public String toString() {
+        return super.toString() + "model.Professor{" +
+                "esepcialidade='" + esepcialidade + '\'' +
+                '}';
+    }
+
+    public String getEsepcialidade() {
+        return esepcialidade;
+    }
+
+    public void setEsepcialidade(String esepcialidade) {
+        this.esepcialidade = esepcialidade;
+    }
+
+    public void calcular_Salario() {
+        salario = valorHora * horasTrabalhadas;
+    }
+
+    public void aplicarBonus() {
+
+    }
+
+    public Cargo getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(Cargo cargo) {
+        this.cargo = cargo;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public int getHorasTrabalhadas() {
+        return horasTrabalhadas;
+    }
+
+    public void setHorasTrabalhadas(int horasTrabalhadas) {
+        this.horasTrabalhadas = horasTrabalhadas;
+    }
+
+    public int getValorHora() {
+        return valorHora;
+    }
+
+    @Override
+    public void quemSouEu() {
+        System.out.println("Sou o professor");
+    }
+
+    @Override
+
+    public void responsabilidade() {
+        System.out.println("Ensinar");
+    }
+
+    public void calcularSalario() {
+        salario = valorHora * horasTrabalhadas;
+    }
+
+
+}
